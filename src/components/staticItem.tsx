@@ -1,15 +1,15 @@
 import React from "react";
-import {Card, CardContent, CardActions, Button, Avatar, SvgIcon} from "@material-ui/core";
+import {Card, CardContent, CardActions, Button, Avatar, SvgIcon, Typography} from "@material-ui/core";
 import * as MaterialIcons from "@material-ui/icons";
 
 import classes from "*.module.sass";
 
-export const StaticItem : React.FC = () => {
+export const StaticItem : React.FC = (name) => {
 return (
     <Card>
         <CardContent>
-            <Avatar>T</Avatar>
-            Some text here
+            <Avatar>{name.children}</Avatar>
+            <Typography>{name.children}</Typography>
             <MaterialIcons.Star/>
             <MaterialIcons.ArrowForward/>
         </CardContent>
