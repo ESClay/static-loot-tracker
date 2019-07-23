@@ -16,5 +16,5 @@ const statics: Static[] = [ {
     staticId: "90234uyrwoekjrh023948ur923i4uhr",
 }
 ]
-storiesOf("Static List", module).add("Empty List", () => <StaticList {...Array<Static>()}></StaticList>);
-storiesOf("Static List", module).add("Item in list", () => <StaticList {...statics}></StaticList>);
+storiesOf("Static List", module).add("Empty List", () => <StaticList statics={[]}></StaticList>);
+storiesOf("Static List", module).add("Item in list", () => <StaticList statics={statics}></StaticList>);

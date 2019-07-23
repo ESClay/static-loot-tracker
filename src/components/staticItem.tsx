@@ -12,14 +12,16 @@ const useStyles = makeStyles(
          }
      })
 )
-export const StaticItem : React.FC<Static> = ({staticName, staticId}) => {
+export const StaticItem : React.FC<{team: Static}> = ({team}) => {
     const classes = useStyles();
 return (
     <Paper>
     <Card>
         <CardContent className={classes.cardContent}>
             <Avatar></Avatar>
-            <Typography display="inline">{staticName}</Typography>
+            {/* {team.staticName}
+            //*/}
+            <Typography display="inline">{team.staticName}</Typography> 
             <MaterialIcons.Star/>
             <MaterialIcons.ArrowForward/>
         </CardContent>
